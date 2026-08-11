@@ -28,6 +28,12 @@ projects/
     pyproject.toml     dependencies, if any
 ```
 
+## Projects
+
+| # | Project | What it does |
+| --- | --- | --- |
+| 001 | [market-sizer](projects/001-market-sizer) | Sizes a market top-down and bottom-up side by side, then inverts the model to report what each assumption would have to be for the two to agree — and which ones cannot close the gap at all. |
+
 ## Roadmap
 
 See [BACKLOG.md](BACKLOG.md).

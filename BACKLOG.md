@@ -17,11 +17,10 @@ Rules of thumb applied to every item:
 
 ## Done
 
-_nothing yet_
+- [x] **001 — market-sizer** · Top-down and bottom-up sizing side by side with a closed-form inversion: for each assumption, the value that would make the two agree, and an explicit infeasible verdict where no value can. Provenance is mandatory; staleness is reported. 49 tests.
 
 ## Queue
 
-- [ ] **001 — market-sizer** · Top-down and bottom-up market sizing side by side, forced to reconcile, with every assumption carrying its source.
 - [ ] **002 — dcf-lab** · Driver-based DCF with a WACC build-up, Gordon and exit-multiple terminal values, and a sensitivity grid that shows how little of the answer comes from the forecast period.
 - [ ] **003 — scenario-engine** · Scenarios as named parameter overlays over a base model: run them all, report the spread rather than a point estimate.
 - [ ] **004 — tidy-export** · Turn a messy spreadsheet export — merged headers, repeated labels, footnote rows — into a tidy table, and report what it had to discard.

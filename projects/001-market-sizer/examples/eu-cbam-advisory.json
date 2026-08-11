@@ -1,0 +1,70 @@
+{
+  "market": "Illustrative: CBAM reporting software for EU importers, annual",
+  "unit": "EUR/yr",
+  "notes": "Every figure below is illustrative and marked unverified on purpose. The point of the example is the shape of the argument, not the numbers. Replace them with your own sourced inputs before quoting anything.",
+  "top_down": {
+    "universe": {
+      "name": "EU compliance software spend",
+      "value": 4200000000,
+      "unit": "EUR/yr",
+      "kind": "value",
+      "source": "Illustrative placeholder - no published source",
+      "as_of": "2024-01-01",
+      "verified": false
+    },
+    "factors": [
+      {
+        "name": "share that is environmental compliance",
+        "value": 0.11,
+        "kind": "share",
+        "source": "Illustrative placeholder - no published source",
+        "as_of": "2024-01-01",
+        "verified": false
+      },
+      {
+        "name": "share addressable by a CBAM-specific tool",
+        "value": 0.18,
+        "kind": "share",
+        "source": "Illustrative placeholder - no published source",
+        "as_of": "2024-06-01",
+        "verified": false
+      },
+      {
+        "name": "share reachable by a single vendor",
+        "value": 0.30,
+        "kind": "share",
+        "source": "Illustrative placeholder - no published source",
+        "as_of": "2025-01-01",
+        "verified": false
+      }
+    ]
+  },
+  "bottom_up": {
+    "segments": [
+      {
+        "name": "Large importers",
+        "drivers": [
+          {"name": "large importers in scope", "value": 8000, "kind": "count", "unit": "firms", "source": "Illustrative placeholder - no published source", "as_of": "2024-06-01", "verified": false},
+          {"name": "large importer attach rate", "value": 0.22, "kind": "share", "source": "Illustrative placeholder - no published source", "as_of": "2025-01-01", "verified": false},
+          {"name": "large importer price", "value": 14000, "kind": "price", "unit": "EUR/yr", "source": "Illustrative placeholder - no published source", "as_of": "2025-01-01", "verified": false}
+        ]
+      },
+      {
+        "name": "Mid-market importers",
+        "drivers": [
+          {"name": "mid-market importers in scope", "value": 46000, "kind": "count", "unit": "firms", "source": "Illustrative placeholder - no published source", "as_of": "2024-06-01", "verified": false},
+          {"name": "mid-market attach rate", "value": 0.09, "kind": "share", "source": "Illustrative placeholder - no published source", "as_of": "2025-01-01", "verified": false},
+          {"name": "mid-market price", "value": 3600, "kind": "price", "unit": "EUR/yr", "source": "Illustrative placeholder - no published source", "as_of": "2025-01-01", "verified": false}
+        ]
+      },
+      {
+        "name": "Customs and freight intermediaries",
+        "drivers": [
+          {"name": "intermediaries in scope", "value": 5200, "kind": "count", "unit": "firms", "source": "Illustrative placeholder - no published source", "as_of": "2024-06-01", "verified": false},
+          {"name": "intermediary attach rate", "value": 0.14, "kind": "share", "source": "Illustrative placeholder - no published source", "as_of": "2025-01-01", "verified": false},
+          {"name": "intermediary price", "value": 9000, "kind": "price", "unit": "EUR/yr", "source": "Illustrative placeholder - no published source", "as_of": "2025-01-01", "verified": false}
+        ]
+      }
+    ]
+  }
+}

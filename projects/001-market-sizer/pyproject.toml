@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "market-sizer"
+version = "0.1.0"
+description = "Size a market top-down and bottom-up side by side, force the two to reconcile, and keep a source against every assumption."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["market sizing", "tam", "sam", "som", "strategy", "consulting", "assumptions"]
+dependencies = []
+
+[project.scripts]
+market-sizer = "market_sizer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["market_sizer*"]
