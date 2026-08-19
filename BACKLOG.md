@@ -30,3 +30,4 @@ Rules of thumb applied to every item:
 - [ ] **008 — waterfall** · Bridge charts from any two-period dataset with the arithmetic checked rather than hand-typed.
 - [ ] **009 — assumption-log** · Extract hardcoded numbers from a model, register them with a source and a review date, and report which have gone stale.
 - [ ] **010 — survey-weights** · Post-stratification and raking, reporting design effect and effective sample size so nobody quotes a margin of error that does not exist.
+- [ ] **011 — benford-check** · Screen a set of reported figures against Benford's law and flag what deserves a second look, with an honest note on the method's false-positive rate. Moved here from `esg-toolkit`, whose queue it predated: the method is general analysis rather than anything to do with emissions.
