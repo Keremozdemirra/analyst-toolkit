@@ -1,0 +1,169 @@
+{
+  "company": "Illustrative: Helios Components NV, enterprise value",
+  "unit": "EUR m",
+  "years": 5,
+  "notes": "Every figure below is illustrative and marked unverified on purpose. The point of the example is the shape of the argument and the size of the terminal share, not the numbers. Replace them with your own sourced inputs before quoting anything.",
+  "base_revenue": {
+    "name": "base year revenue",
+    "value": 1200,
+    "unit": "EUR m",
+    "kind": "value",
+    "source": "Illustrative placeholder - no published source",
+    "as_of": "2025-12-31",
+    "verified": false
+  },
+  "drivers": {
+    "revenue_growth": [
+      {"name": "revenue growth y1", "value": 0.09, "kind": "rate", "source": "Illustrative placeholder - no published source", "as_of": "2026-01-15", "verified": false},
+      {"name": "revenue growth y2", "value": 0.075, "kind": "rate", "source": "Illustrative placeholder - no published source", "as_of": "2026-01-15", "verified": false},
+      {"name": "revenue growth y3", "value": 0.06, "kind": "rate", "source": "Illustrative placeholder - no published source", "as_of": "2026-01-15", "verified": false},
+      {"name": "revenue growth y4", "value": 0.05, "kind": "rate", "source": "Illustrative placeholder - no published source", "as_of": "2026-01-15", "verified": false},
+      {"name": "revenue growth y5", "value": 0.04, "kind": "rate", "source": "Illustrative placeholder - no published source", "as_of": "2026-01-15", "verified": false}
+    ],
+    "ebit_margin": [
+      {"name": "EBIT margin y1", "value": 0.13, "kind": "rate", "source": "Illustrative placeholder - no published source", "as_of": "2026-01-15", "verified": false},
+      {"name": "EBIT margin y2", "value": 0.135, "kind": "rate", "source": "Illustrative placeholder - no published source", "as_of": "2026-01-15", "verified": false},
+      {"name": "EBIT margin y3", "value": 0.14, "kind": "rate", "source": "Illustrative placeholder - no published source", "as_of": "2026-01-15", "verified": false},
+      {"name": "EBIT margin y4", "value": 0.142, "kind": "rate", "source": "Illustrative placeholder - no published source", "as_of": "2026-01-15", "verified": false},
+      {"name": "EBIT margin y5", "value": 0.142, "kind": "rate", "source": "Illustrative placeholder - no published source", "as_of": "2026-01-15", "verified": false}
+    ],
+    "tax_rate": {
+      "name": "effective tax rate",
+      "value": 0.25,
+      "kind": "share",
+      "source": "Illustrative placeholder - no published source",
+      "as_of": "2025-06-30",
+      "verified": false,
+      "note": "Held flat across the forecast, which is an assumption and not an observation."
+    },
+    "da_pct_revenue": {
+      "name": "depreciation and amortisation, share of revenue",
+      "value": 0.052,
+      "kind": "rate",
+      "source": "Illustrative placeholder - no published source",
+      "as_of": "2025-12-31",
+      "verified": false
+    },
+    "capex_pct_revenue": [
+      {"name": "capex share of revenue y1", "value": 0.075, "kind": "rate", "source": "Illustrative placeholder - no published source", "as_of": "2026-01-15", "verified": false},
+      {"name": "capex share of revenue y2", "value": 0.07, "kind": "rate", "source": "Illustrative placeholder - no published source", "as_of": "2026-01-15", "verified": false},
+      {"name": "capex share of revenue y3", "value": 0.065, "kind": "rate", "source": "Illustrative placeholder - no published source", "as_of": "2026-01-15", "verified": false},
+      {"name": "capex share of revenue y4", "value": 0.06, "kind": "rate", "source": "Illustrative placeholder - no published source", "as_of": "2026-01-15", "verified": false},
+      {"name": "capex share of revenue y5", "value": 0.058, "kind": "rate", "source": "Illustrative placeholder - no published source", "as_of": "2026-01-15", "verified": false}
+    ],
+    "nwc_pct_revenue_change": {
+      "name": "working capital per unit of revenue growth",
+      "value": 0.18,
+      "kind": "rate",
+      "source": "Illustrative placeholder - no published source",
+      "as_of": "2025-12-31",
+      "verified": false
+    }
+  },
+  "wacc": {
+    "risk_free": {
+      "name": "risk-free rate",
+      "value": 0.029,
+      "kind": "rate",
+      "source": "Illustrative placeholder - no published source",
+      "as_of": "2026-01-31",
+      "verified": false,
+      "note": "Would normally be a ten-year government yield in the cash flow currency."
+    },
+    "beta": {
+      "name": "levered beta",
+      "value": 1.1,
+      "kind": "value",
+      "source": "Illustrative placeholder - no published source",
+      "as_of": "2025-12-31",
+      "verified": false
+    },
+    "equity_risk_premium": {
+      "name": "equity risk premium",
+      "value": 0.048,
+      "kind": "rate",
+      "source": "Illustrative placeholder - no published source",
+      "as_of": "2025-07-01",
+      "verified": false
+    },
+    "premia": [
+      {
+        "name": "size premium",
+        "value": 0.015,
+        "kind": "rate",
+        "source": "Illustrative placeholder - no published source",
+        "as_of": "2025-07-01",
+        "verified": false,
+        "note": "Named separately so that it has to be defended rather than absorbed into beta."
+      }
+    ],
+    "cost_of_debt_pretax": {
+      "name": "pre-tax cost of debt",
+      "value": 0.052,
+      "kind": "rate",
+      "source": "Illustrative placeholder - no published source",
+      "as_of": "2026-01-31",
+      "verified": false
+    },
+    "marginal_tax_rate": {
+      "name": "marginal tax rate for the interest shield",
+      "value": 0.25,
+      "kind": "share",
+      "source": "Illustrative placeholder - no published source",
+      "as_of": "2025-06-30",
+      "verified": false
+    },
+    "market_value_equity": {
+      "name": "market value of equity",
+      "value": 1450,
+      "unit": "EUR m",
+      "kind": "value",
+      "source": "Illustrative placeholder - no published source",
+      "as_of": "2026-01-31",
+      "verified": false
+    },
+    "market_value_debt": {
+      "name": "market value of debt",
+      "value": 520,
+      "unit": "EUR m",
+      "kind": "value",
+      "source": "Illustrative placeholder - no published source",
+      "as_of": "2026-01-31",
+      "verified": false
+    }
+  },
+  "terminal": {
+    "metric": "ebitda",
+    "growth": {
+      "name": "terminal growth",
+      "value": 0.021,
+      "kind": "rate",
+      "source": "Illustrative placeholder - no published source",
+      "as_of": "2026-01-31",
+      "verified": false
+    },
+    "exit_multiple": {
+      "name": "exit EV/EBITDA multiple",
+      "value": 8.5,
+      "kind": "multiple",
+      "source": "Illustrative placeholder - no published source",
+      "as_of": "2026-01-31",
+      "verified": false
+    },
+    "long_run_nominal_gdp": {
+      "name": "long-run nominal GDP growth",
+      "value": 0.032,
+      "kind": "rate",
+      "source": "Illustrative placeholder - no published source",
+      "as_of": "2025-10-01",
+      "verified": false
+    }
+  },
+  "discounting": {
+    "mid_year": false
+  },
+  "sensitivity": {
+    "wacc_deltas": [-0.01, -0.005, 0.0, 0.005, 0.01],
+    "growth_deltas": [-0.01, -0.005, 0.0, 0.005, 0.01]
+  }
+}
