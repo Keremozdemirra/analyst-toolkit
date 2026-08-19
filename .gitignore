@@ -10,3 +10,8 @@ dist/
 .DS_Store
 .idea/
 .vscode/
+
+# Never commit local environment files
+.env
+.env.*
+!.env.example
