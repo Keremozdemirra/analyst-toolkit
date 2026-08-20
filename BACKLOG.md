@@ -18,10 +18,10 @@ Rules of thumb applied to every item:
 ## Done
 
 - [x] **001 — market-sizer** · Top-down and bottom-up sizing side by side with a closed-form inversion: for each assumption, the value that would make the two agree, and an explicit infeasible verdict where no value can. Provenance is mandatory; staleness is reported. 49 tests.
+- [x] **002 — dcf-lab** · Driver-based projection with the cost of capital built up from its components, and the terminal period valued both ways with each restated in the other's units. Enterprise value is split into forecast and terminal present value, and a WACC by terminal-growth grid carries that share in every cell. Terminal growth at or above the discount rate is refused rather than clamped. 72 tests.
 
 ## Queue
 
-- [ ] **002 — dcf-lab** · Driver-based DCF with a WACC build-up, Gordon and exit-multiple terminal values, and a sensitivity grid that shows how little of the answer comes from the forecast period.
 - [ ] **003 — scenario-engine** · Scenarios as named parameter overlays over a base model: run them all, report the spread rather than a point estimate.
 - [ ] **004 — tidy-export** · Turn a messy spreadsheet export — merged headers, repeated labels, footnote rows — into a tidy table, and report what it had to discard.
 - [ ] **005 — peer-benchmark** · Peer comparison tables with normalisation, outlier handling, and quartiles that state their own sample size.

@@ -33,6 +33,7 @@ projects/
 | # | Project | What it does |
 | --- | --- | --- |
 | 001 | [market-sizer](projects/001-market-sizer) | Sizes a market top-down and bottom-up side by side, then inverts the model to report what each assumption would have to be for the two to agree — and which ones cannot close the gap at all. |
+| 002 | [dcf-lab](projects/002-dcf-lab) | Values a business from named drivers with the cost of capital built up rather than asserted, values the terminal period both ways so each checks the other, and splits the answer into the part that was forecast and the part that was not — which is usually most of it. |
 
 ## Roadmap
 

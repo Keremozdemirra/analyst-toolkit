@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dcf-lab"
+version = "0.1.0"
+description = "Driver-based discounted cash flow with a WACC build-up, two terminal values that check each other, and an explicit split between forecast and terminal value."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["dcf", "valuation", "wacc", "terminal value", "gordon growth", "sensitivity", "finance"]
+dependencies = []
+
+[project.scripts]
+dcf-lab = "dcf_lab.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["dcf_lab*"]
