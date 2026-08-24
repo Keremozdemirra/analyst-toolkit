@@ -1,5 +1,7 @@
 # analyst-toolkit
 
+[![tests](https://github.com/Keremozdemirra/analyst-toolkit/actions/workflows/tests.yml/badge.svg)](https://github.com/Keremozdemirra/analyst-toolkit/actions/workflows/tests.yml)
+
 Strategy and finance work runs on spreadsheets that get copied, edited and
 re-copied until nobody can say where a number came from. The analysis itself is
 usually sound; the medium is what fails.

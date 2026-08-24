@@ -1,0 +1,48 @@
+# Every package in this repository, on the oldest Python it claims to support
+# and on the newest. The suites are standard library only, so there is nothing
+# to install: the tests put their own project root on sys.path.
+name: tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+# read the code, nothing else
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    name: find the packages
+    runs-on: ubuntu-latest
+    outputs:
+      projects: ${{ steps.find.outputs.projects }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: find
+        # one entry per directory holding a pyproject.toml, as a JSON array
+        run: |
+          list=$(find projects -mindepth 2 -maxdepth 2 -name pyproject.toml -printf '%h\n' \
+                 | sort \
+                 | python3 -c 'import json,sys; print(json.dumps([l.strip() for l in sys.stdin if l.strip()]))')
+          echo "projects=$list" >> "$GITHUB_OUTPUT"
+          echo "$list"
+
+  test:
+    name: ${{ matrix.project }} · py${{ matrix.python }}
+    needs: discover
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project: ${{ fromJSON(needs.discover.outputs.projects) }}
+        python: ["3.9", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: unittest
+        working-directory: ${{ matrix.project }}
+        run: python -m unittest discover -s tests -t . -v
